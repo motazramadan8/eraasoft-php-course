@@ -1,6 +1,6 @@
 <?php
 
-  // ? gettype()
+  // ** gettype()
 
   // Boolean => True Or False
   $sun = true; // Proven fact
@@ -45,17 +45,13 @@
 
   // Array => [1,2,3,4,5] | ["A"=>1, "B"=>2] | array(1,2,3,4,5) | array("A"=>1, "B"=>2)
   $colors = ["Red", "White", "Blue", "Green"];
-
   echo gettype($colors) . "<br/>"; // Output: array
 
   // Object
   class user {}
-
   $user1 = new User();
-
   echo gettype($user1) . "<br/>"; // Output: object
 
   // Resource
   $file = fopen("data.txt", "r");
-
   echo gettype($file) . "<br/>"; // Output: resource

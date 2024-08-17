@@ -7,27 +7,33 @@
   $i = 0;
 
   echo "<ul>";
-  echo "<li>";
-  echo $colors[$i];
-  echo "</li>";
-  echo "<li>";
-  echo $colors[++$i];
-  echo "</li>";
-  echo "<li>";
-  echo $colors[++$i];
-  echo "</li>";
-  echo "<li>";
-  echo $colors[++$i];
-  echo "</li>";
-  echo "<li>";
-  echo $colors[++$i];
-  echo "</li>";
-  echo "<li>";
-  echo $colors[++$i];
-  echo "</li>";
-  echo "<li>";
-  echo $colors[++$i];
-  echo "</li>";
+    echo "<li>";
+    echo $colors[$i];
+    echo "</li>";
+
+    echo "<li>";
+    echo $colors[++$i];
+    echo "</li>";
+
+    echo "<li>";
+    echo $colors[++$i];
+    echo "</li>";
+
+    echo "<li>";
+    echo $colors[++$i];
+    echo "</li>";
+
+    echo "<li>";
+    echo $colors[++$i];
+    echo "</li>";
+
+    echo "<li>";
+    echo $colors[++$i];
+    echo "</li>";
+
+    echo "<li>";
+    echo $colors[++$i];
+    echo "</li>";
   echo "</ul>";
 
   echo "<pre>";

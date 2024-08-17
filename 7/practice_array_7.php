@@ -18,3 +18,4 @@
   rand_student($students);
   rand_student($students);
   rand_student($students);
+  rand_student($students);

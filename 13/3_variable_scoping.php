@@ -2,6 +2,7 @@
 
   $x = 5;
   echo $x;
+  echo "\n";
 
   function getX() {
     $x = 60;
@@ -10,10 +11,10 @@
 
   getX();
 
-  $tax = 50;
-
+  
   echo "\n";
-
+  
+  $tax = 50;
   function setTax($total) {
     global $tax;
     if ($total > 200) {

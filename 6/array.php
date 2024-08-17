@@ -23,8 +23,8 @@
 
   // Multidimensional Array
   $products = [
-    ["product #1", 50],
-    ["product #2", 200],
-    ["product #3", 70],
+    ["#1 product", 50],
+    ["#2 product", 200],
+    ["#3 product", 70],
   ];
-  echo $products[0][0];
+  echo $products[0][0] . " " . $products[0][1];

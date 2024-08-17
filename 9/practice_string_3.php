@@ -8,8 +8,8 @@
     // Get length of string
     $str_len = strlen($string);
 
-    // Get length of "eraasoft" in string
-    $eraasoft_len = strlen($word);
+    // Get length of "$word" in string
+    $word_len = strlen($word);
 
     // Delete eraasoft from string
     $new_str = str_replace($word, "", $string);
@@ -18,12 +18,12 @@
     $new_str_len = strlen($new_str);
 
     // Get sum first length - last length
-    $str_after_delete_eraasoft_len = $str_len - $new_str_len;
+    $str_after_delete_word_len = $str_len - $new_str_len;
 
     // Divide the result by the number of letters of the word Eraasoft
-    $eraasoft_count = $str_after_delete_eraasoft_len / $eraasoft_len;
+    $word_count = $str_after_delete_word_len / $word_len;
 
-    return "<h1>The count of word: $eraasoft_count</h1>";
+    return "<h1>The count of word: $word_count</h1>";
   }
 
   echo str_count($text, "eraasoft");

@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -15,11 +15,11 @@
     <?php
       $url = explode("/", $_SERVER["SCRIPT_NAME"]);
       // var_dump($url);
-      echo $url[count($url) - 1];
+      // echo $url[count($url) - 1];
       $php = explode(".", $url[count($url) - 1]);
     ?>
 
-    <h1 class="text-center p-2 my-3">Super Global - SERVER!</h1>
+    <h1 class="text-center p-2 my-3">Super Global - SERVER</h1>
     <h2 class="text-center p-2 my-3">
       <?php echo"SCRIPT_NAME: " . $url[count($url) - 1]; ?>
     </h2>

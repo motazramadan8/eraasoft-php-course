@@ -1,9 +1,6 @@
 <?php
-
   echo "<pre>";
   
-  print_r($_REQUEST);
-
   if (count($_GET) != 0) {
     print_r($_GET);
     echo "Username: " . $_GET["user_name"] . "<br/>";

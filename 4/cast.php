@@ -11,5 +11,5 @@
   
   // Type casting
   $price = (float) "30";
-  echo $price . "<br>"; // 30 => as integer
-  echo gettype($price) . "<br>"; // integer
+  echo $price . "<br>"; // 30 => as float
+  echo gettype($price) . "<br>"; // float

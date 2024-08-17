@@ -34,6 +34,13 @@
   print_r($colors);
   echo "</pre>";
 
+  // remove first element in array --> array_shift()
+  echo '<h2>remove last element in array --> array_shift()</h2>';
+  array_shift($colors);
+  echo "<pre>";
+  print_r($colors);
+  echo "</pre>";
+
   // remove last element in array --> array_pop()
   echo '<h2>remove last element in array --> array_pop()</h2>';
   array_pop($colors);

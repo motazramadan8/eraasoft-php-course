@@ -1,4 +1,5 @@
-<!doctype html>
+<?php session_start(); ?>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -15,7 +16,20 @@
       <div class="row">
         <h1 class="text-center border p-5 my-3">Users Database</h1>
         <div class="col-6 mx-auto p-2">
-          <form action="6_practice_user.php" method="POST" class="p-3 border">
+          <form action="form_validation.php" method="POST" class="p-3 border">
+            <?php
+              if (isset($_SESSION["errors"])):
+                var_dump($_SESSION["errors"]);
+                foreach($_SESSION["errors"] as $error):
+            ?>
+              <div class="alert alert-danger">
+                <?php echo $error; ?>
+              </div>
+            <?php
+                endforeach;
+                unset($_SESSION["errors"]);
+              endif;
+            ?>
             <div class="form-group">
               <div class="mb-3">
                 <input type="text" name="user_name" class="form-control" placeholder="Type name of user">
